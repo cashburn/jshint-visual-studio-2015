@@ -6,7 +6,7 @@ This is a fork of [jshint-visual-studio-2015](https://github.com/jaybz/jshint-vi
 
 [jshint-visual-studio-2015](https://github.com/jaybz/jshint-visual-studio-2015) forces every message to be classified as an error in the VS Error List, even if it is a warning. This fork includes the possibility of warnings and information messages, as well an option to treat all warnings as errors. This can be passed to the reporter by passing an object with the `TreatWarningsAsErrors: true` setting.
 
-###Usage
+### Usage
 Using the JSHint CLI
 ```
 jshint test.js --reporter=.\PATH-TO-DIR\jshint-visual-studio\visual-studio.js
