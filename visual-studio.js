@@ -1,7 +1,9 @@
 'use strict';
 
 module.exports = {
-    reporter: function(results) {
+    reporter: function(results, data, options) {
+        options = options || { TreatWarningsAsErrors: false };
+
         // Categorise each error by filename.
         var errors = results.reduce(function(previous, current) {
             if (!previous[current.file]) {
@@ -22,6 +24,10 @@ module.exports = {
                 case 'E':
                     severity = 'error';
                     break;
+            }
+
+            if (options.TreatWarningsAsErrors) {
+                severity = 'error';
             }
 
             previous[current.file].push(current.file + '(' + error.line + ',' +
