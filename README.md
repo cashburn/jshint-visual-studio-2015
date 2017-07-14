@@ -25,6 +25,8 @@ gulp.task('lint', function() {
 
 Please refer to [jshint-visual-studio](https://github.com/patricklafrance/jshint-visual-studio) for further documentation.
 
+This package is published as [jshint-visual-studio-reporter](https://www.npmjs.com/package/jshint-visual-studio-reporter)
+
 ### License
 
 Thanks to Patrick Lafrance for [jshint-visual-studio](https://github.com/patricklafrance/jshint-visual-studio).
